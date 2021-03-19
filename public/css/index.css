@@ -1,0 +1,688 @@
+/* 公共样式 */
+
+body {
+  height: 1000px;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+ 
+line-height: 1.5;
+  background-color: #fff;
+  /* height: 9999px; */
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?qr75br');
+  src:  url('../fonts/icomoon.eot?qr75br#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qr75br') format('truetype'),
+    url('../fonts/icomoon.woff?qr75br') format('woff'),
+    url('../fonts/icomoon.svg?qr75br#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+input,
+section,
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+
+
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* 媒体查询 */
+
+/*  这是侧边固定栏 */
+.calc {
+  position: fixed;
+  top: 436px;
+  right: 0;
+  width: 1.2rem;
+  height: 4rem;
+  margin-right: 1px;
+  color: black;
+  text-align: center;
+
+  padding-top: 0.4rem;
+  z-index: 7;
+  font-size: 0.5rem;
+
+  border-radius: 20px;
+  font-weight: 700;
+  background: #fff;
+  opacity: 0.96;
+  transition: all 1s;
+}
+
+.sspan {
+  transition: all 0.5s;
+  position: fixed;
+
+  right: 1px;
+  width: 1.2rem;
+
+  margin-right: 1px;
+  color: black;
+  text-align: center;
+
+  padding-top: 0.4rem;
+
+  font-size: 0.5rem;
+  z-index: 99;
+
+  font-weight: 700;
+  background: #fff;
+  opacity: 0.96;
+  visibility: hidden;
+
+
+
+ cursor: pointer;
+
+  height: 1.2rem;
+  top: 400px;
+  border-radius: 1px 1px 20px 20px;
+
+}
+
+.ssspan{
+  visibility: visible;
+background-color: b#ccc;
+top: 351px;
+border-radius:  20px 20px 1px 1px;
+}
+
+
+
+
+/* 这是放大狂 */
+
+.big {
+  position: fixed;
+  display: flex;
+  visibility: hidden;
+
+  height: 50px;
+
+
+  top: 234px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 33;
+  border-radius: 5px;
+
+
+}
+
+.big input {
+  flex: 1;
+  height: 36.5px;
+
+  margin-top: 5px;
+  background: #fff;
+  color: black;
+  font-size: 0.6rem;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 700;
+  opacity: 0.96;
+}
+
+.bigbutton {
+  flex: 2;
+font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big button {
+  flex: 1;
+  margin-top: 20px;
+  width: 67px;
+  opacity: 0.7;
+
+  background-color: rgb(177, 88, 28);
+  color: #fff;
+
+  border-radius: 0 10px 10px 0;
+}
+
+.big button:nth-child(1) {
+  background-color: rgb(35, 111, 182);
+  color: #fff;
+  margin-right: 1rem;
+  border-radius: 10px 0 0 10px;
+}
+
+/*这是导航栏*/
+.focuss {
+  width: 100%;
+
+  position: relative;
+
+}
+
+
+
+.nav {
+
+  position: absolute;
+
+
+  height: 4rem;
+
+
+  width: 100%;
+
+  font-size: 15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 5px;
+
+  bottom: 10px;
+
+
+}
+
+.nav-staff {
+  float: left;
+  width: 30.333333%;
+  height: 40px;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 40px;
+  margin: 9px 0 0 2%;
+  background: rgba(185, 169, 169, 0.3);
+  border-radius: 7px;
+  color: #fff;
+ 
+}
+
+
+
+.focuss img {
+  width: 100%;
+  vertical-align: middle;
+
+
+}
+
+
+
+/*     这里是包子*/
+#bbz {
+  margin-top: 2.4px;
+  border-radius: 7px 2px 22px 2px;
+  position: relative;
+  height: 40px;
+  border: 1px solid rgb(153, 42, 85);
+  overflow: hidden;
+  border-bottom: 0px;
+  vertical-align: middle;
+
+
+}
+
+#bbz .section-hd {
+  height: 40px;
+  width: 30%;
+  background: -webkit-linear-gradient(left, #d63916, #fdf0b2);
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+
+.section-ed {
+
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  background: pink;
+  right: 0;
+  background: url(../images/eatbun.gif);
+
+  background-size: auto 40px;
+
+}
+
+.bzcontent {
+  margin-top: 0;
+
+
+
+}
+
+.bzcontent ul {
+  margin: 0;
+  width: 100%;
+  display: flex;
+
+  flex-wrap: wrap;
+
+
+
+
+}
+
+
+.whichbz {
+  display: flex;
+  box-sizing: border-box;
+  flex: 25%;
+
+
+  border: 2px solid #fff;
+
+
+  flex-direction: column;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.whichbz-hd p {
+  position: relative;
+  z-index: 2;
+
+
+
+}
+
+.whichbz input {
+  position: absolute;
+  bottom: 27px;
+  right: 0;
+  border: 1px solid transparent;
+  border-radius: 20px 0 0 20px;
+  height: 15px;
+  width: 35%;
+  padding-left: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+line-height: 15px;
+font-size: 13px;
+}
+
+.whichbz-hd .whichbz-in {
+
+  width: 17.5%;
+
+}
+
+
+
+
+.section-hd {
+  position: relative;
+}
+
+.whichbz div img {
+  width: 100%;
+
+  vertical-align: middle;
+  transition: all 1s;
+
+}
+
+.bzcontent ul li:hover img {
+  transform: scale(1.3);
+
+}
+
+.whichbz div p {
+
+
+  font-size: 12px;
+  text-align: center;
+  background-color: rgba(226, 219, 219, 0.911);
+
+
+}
+
+/* 汤粉米粉 */
+#tfbox {
+
+  height: 0.94rem;
+  width: 100%;
+ overflow: hidden;
+  perspective: 2000px;
+  background:-webkit-linear-gradient(left ,#ccb865 , #d8401c);
+ 
+
+ border-radius: 3px 10px 3px 10px;
+margin-top: -0.28rem;
+margin-bottom: 0.08rem;
+}
+
+
+
+@keyframes pwheel {
+
+
+
+  100% {
+    transform: rotateX(112deg);
+
+  }
+
+}
+
+
+#tfbox .tfbox-hd {
+  transform: rotateX(-112deg);
+  height: 0.8rem;
+  animation: pwheel 2s infinite linear alternate;
+padding-left: 10px;
+  -webkit-animation: pwheel 2s infinite linear alternate;
+}
+
+
+
+
+
+
+.pinwheel {
+  padding: 0.1rem;
+  width: 300px;
+  background-color: transparent;
+  height: 0.76rem;
+
+  text-align: left;
+  line-height: .76rem;
+  font-size: 0.6rem;
+  font-weight: 500;
+ 
+}
+
+
+/* 汤粉米粉具体布局，打乱流 */
+.rice_falls{
+  width:31.63%;;
+
+}
+
+.rice_falls img{width: 100%;}
+
+
+.rice_noodles Ul{
+display:flex  ;
+flex-direction: row;
+flex-wrap: wrap;
+align-content:center;
+justify-content:space-between ;
+width: 100%;
+background: #d3c99730;
+margin-bottom: 0.24rem;
+}
+
+.rice_falls:nth-of-type(4+3n){
+position: relative;
+background: #000;
+
+}
+
+
+.rice_noodles{font-size: 0.52rem;
+text-align: center;
+
+
+}
+/* 炒粉 */
+
+.fried{
+height: 0.8rem;
+background-color:#337ab7;
+font-size: 0.6rem;
+overflow: hidden;
+border-radius: 7px 7px 7px 7px;
+}
+.fried_sprite i{
+ position: absolute;
+ display: inline-block;
+ width: 1.6rem;
+  font-style: normal ;
+left: 1.8rem;}
+.fried_sprite{
+  position: relative;
+  height: 100%;
+width: 1.6rem;
+background: url(../images/bear.png) no-repeat ;
+
+background-size: auto 0.8rem;
+
+animation: fried_bear 1s steps(7) infinite,fried_run 3s linear infinite;
+}
+/* 奔跑的大熊 */
+@keyframes fried_bear{
+
+ 
+
+ 0%{background-position: 0 0;}
+100%{
+  background-position: -11.2rem 0;
+
+  }
+}
+
+@keyframes fried_run{
+  0%{left: -1.6rem;}
+  100%{
+    left: 14.4rem;
+  
+    }
+
+
+}
+
+
+/* 三角模块 */
+.triangle{
+height: 0;
+width: 0;
+border:0.12rem solid transparent ;
+border-top:0.28rem solid #337ab7;
+position:absolute ;
+left: 0.2rem;
+z-index: 5;
+}
+
+
+/* 这是炒粉 */
+.container{
+  /* padding: 0!important; */
+width: 100%!important;
+
+}
+.strap header{
+
+/* height: 4.4rem; */
+
+padding:0.08rem  0.08rem  0  ;
+
+
+
+}
+.strap header img{
+width: 100%;
+
+
+
+}
+.strap header span{
+ display: block;
+  width: 100%;
+padding: 0;
+}
+
+
+/* 肠粉 */
+.vermicelli{
+margin-top: 0.22rem;
+background: #8359d13f;
+padding-left: 0.52rem;
+border-top-right-radius:0 ;
+
+}
+
+.vermicelli_contain{
+width: 100%;
+margin: 0.1rem auto;
+overflow: hidden;
+
+border-radius: 5px;
+}
+.vermicelli_before{
+
+width: 49.8%;
+float: left;
+
+
+
+}
+
+.vermicelli_after{
+ 
+  width: 49.8%;
+  float: right;
+  height: 100%;
+  
+  }
+
+
+  table{
+border-collapse:collapse;
+
+
+  }
+
+
+ .vermicelli_contain img{
+width: 100%;
+
+
+ }
+
+ .vermicelli_before tr th,.vermicelli_after tr th {text-align: center;}
+.footer p{margin: 0;}
+.footer{
+position: relative;
+
+width: 99.8%;
+height: 2.2rem;
+margin: 0 auto;
+box-shadow: 0px 1px 13px 0px;
+text-align: center;
+
+
+}
+.footer_conclude{
+position:absolute;
+right: 0.56rem;
+top:1.28rem;
+height: 1rem;
+width: 3rem;
+color: #acacac;
+font-size: 0.6rem;
+line-height: 0.88rem;
+
+color: red;
+
+
+}
+.footer_back{
+display: block;
+left: 0.6rem;
+
+
+}
+#lastone p::after{
+content:'\e93a';
+display:block;
+position: absolute;
+height:0.48rem;
+  font-size:1.04rem;
+  font-family:  'icomoon' ;
+ 
+top: -0.92rem;
+right: 1.08rem;
+
+}
+
+.footer_back p::after{
+  content:'\e900';
+  display:block;
+  position: absolute;
+  height:0.48rem;
+    font-size:1.04rem;
+    font-family:  'icomoon' ;
+   
+  top: -0.88rem;
+  right: 0.96rem;
+  
+  }
+
